@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh -i
 
+# defaults, can be overriden via .env
 RUN_DURATION=35s
 TERMS='a,i,luv'
 
@@ -48,3 +49,4 @@ setup
 bench "rbfeeder" "bundle exec ruby feeder.rb"
 bench "jsfeeder" "coffee feeder-twit.coffee"
 bench "jsfeeder" "coffee feeder-twitter.coffee"
+bench "gofeeder" "./gofeeder"

@@ -6,3 +6,7 @@
 
 # setup nodejs version
 (cd jsfeeder && npm install)
+
+# setup golang version
+go get -u github.com/darkhelmet/twitterstream
+(cd gofeeder && go build)
