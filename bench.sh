@@ -46,7 +46,8 @@ bench () {
 
 # bench top
 setup
-bench "rbfeeder" "bundle exec ruby feeder.rb"
+bench "rbfeeder" "bundle exec ruby feeder-tweetstream.rb"
+bench "rbfeeder" "bundle exec ruby feeder-twitter.rb"
 bench "jsfeeder" "coffee feeder-twit.coffee"
 bench "jsfeeder" "coffee feeder-twitter.coffee"
 bench "gofeeder" "./gofeeder"

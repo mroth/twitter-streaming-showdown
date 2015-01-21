@@ -48,7 +48,6 @@ EM.run do
     period = @tracked-@tracked_last
     period_rate = period / @stats_refresh_rate
 
-    # puts "Terms tracked: #{@tracked} (\u2191#{tracked_period}, +#{tracked_period_rate}/sec.), rate limited: #{@skipped} (+#{@skipped-@skipped_last})"
     puts "Terms tracked: #{@tracked} (\u2191#{period}" +
          ", +#{period_rate}/sec.), rate limited: #{@skipped}" +
          " (+#{@skipped - @skipped_last})"
