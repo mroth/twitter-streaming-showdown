@@ -54,8 +54,7 @@ Decoding the output:
  - User (user clock time)
  - Sys (system clock time)
  - CPU (CPU percentage)
- - Memory (max memory usage): This number seems grossly inflated but the relative
-   comparison should be useful.
+ - Memory (max memory usage)
  - MsgReceived (socket messages received): I believe this is a good
    approximation for incoming bandwidth consumption. This should be affected by
    gzip support.
@@ -79,7 +78,7 @@ RESULTS  7.07s user 0.86s system 22% cpu 35.019 total
 -> avg shared (code):         0 KB
 -> avg unshared (data/stack): 0 KB
 -> total (sum):               0 KB
--> max memory:                37036 MB
+-> max memory:                37036 KB
 -> page faults from disk:     68
 -> other page faults:         23508
 -> socket msgs received:      117922
@@ -98,7 +97,7 @@ RESULTS  6.26s user 1.14s system 21% cpu 35.024 total
 -> avg shared (code):         0 KB
 -> avg unshared (data/stack): 0 KB
 -> total (sum):               0 KB
--> max memory:                46260 MB
+-> max memory:                46260 KB
 -> page faults from disk:     2
 -> other page faults:         25943
 -> socket msgs received:      358062
@@ -117,7 +116,7 @@ RESULTS  9.80s user 0.59s system 29% cpu 35.008 total
 -> avg shared (code):         0 KB
 -> avg unshared (data/stack): 0 KB
 -> total (sum):               0 KB
--> max memory:                69520 MB
+-> max memory:                69520 KB
 -> page faults from disk:     141
 -> other page faults:         18309
 -> socket msgs received:      51258
@@ -135,7 +134,7 @@ RESULTS  4.65s user 0.70s system 15% cpu 35.009 total
 -> avg shared (code):         0 KB
 -> avg unshared (data/stack): 0 KB
 -> total (sum):               0 KB
--> max memory:                68232 MB
+-> max memory:                68232 KB
 -> page faults from disk:     0
 -> other page faults:         18600
 -> socket msgs received:      67540
@@ -154,7 +153,7 @@ RESULTS  9.05s user 1.84s system 31% cpu 35.003 total
 -> avg shared (code):         0 KB
 -> avg unshared (data/stack): 0 KB
 -> total (sum):               0 KB
--> max memory:                10292 MB
+-> max memory:                10292 KB
 -> page faults from disk:     45
 -> other page faults:         3332
 -> socket msgs received:      64506

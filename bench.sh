@@ -9,10 +9,7 @@ TIMEFMT=$'\n'\
 '-> user:                      %U'$'\n'\
 '-> system:                    %S'$'\n'\
 '-> cpu:                       %P'$'\n'\
-'-> avg shared (code):         %X KB'$'\n'\
-'-> avg unshared (data/stack): %D KB'$'\n'\
-'-> total (sum):               %K KB'$'\n'\
-'-> max memory:                %M MB'$'\n'\
+'-> max memory:                %M KB'$'\n'\
 '-> page faults from disk:     %F'$'\n'\
 '-> other page faults:         %R'$'\n'\
 '-> socket msgs received:      %r'$'\n'\
