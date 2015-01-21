@@ -40,15 +40,15 @@ setup () {
 }
 
 bench () {
-  echo "*** Running benchmark for $1 ***"
+  echo "*** Running benchmark for $3 ***"
   (cd $1 && eval "time gtimeout $RUN_DURATION $2")
 }
 
 # bench top
 setup
-bench "rbfeeder" "bundle exec ruby feeder-tweetstream.rb"
-bench "rbfeeder" "bundle exec ruby feeder-twitter.rb"
-bench "jsfeeder" "coffee feeder-twit.coffee"
-bench "jsfeeder" "coffee feeder-twitter.coffee"
-bench "gofeeder" "./gofeeder"
-bench "exfeeder" "./exfeeder"
+bench "rbfeeder" "bundle exec ruby feeder-tweetstream.rb" "Ruby - TweetStream gem (with Oj)"
+bench "rbfeeder" "bundle exec ruby feeder-twitter.rb"     "Ruby - Twitter gem"
+bench "jsfeeder" "coffee feeder-twit.coffee"              "NodeJS - Twit module"
+bench "jsfeeder" "coffee feeder-twitter.coffee"           "NodeJS - NodeTwitter module"
+bench "gofeeder" "./gofeeder"                             "Go - TwitterStream"
+bench "exfeeder" "./exfeeder"                             "Elixir - ExTwitter"
