@@ -10,3 +10,6 @@
 # setup golang version
 go get -u github.com/darkhelmet/twitterstream
 (cd gofeeder && go build)
+
+# set elixir version
+(cd exfeeder && mix deps.get && mix escript.build)
