@@ -75,9 +75,6 @@ RESULTS  7.07s user 0.86s system 22% cpu 35.019 total
 -> user:                      7.07s
 -> system:                    0.86s
 -> cpu:                       22%
--> avg shared (code):         0 KB
--> avg unshared (data/stack): 0 KB
--> total (sum):               0 KB
 -> max memory:                37036 KB
 -> page faults from disk:     68
 -> other page faults:         23508
@@ -94,9 +91,6 @@ RESULTS  6.26s user 1.14s system 21% cpu 35.024 total
 -> user:                      6.26s
 -> system:                    1.14s
 -> cpu:                       21%
--> avg shared (code):         0 KB
--> avg unshared (data/stack): 0 KB
--> total (sum):               0 KB
 -> max memory:                46260 KB
 -> page faults from disk:     2
 -> other page faults:         25943
@@ -113,9 +107,6 @@ RESULTS  9.80s user 0.59s system 29% cpu 35.008 total
 -> user:                      9.80s
 -> system:                    0.59s
 -> cpu:                       29%
--> avg shared (code):         0 KB
--> avg unshared (data/stack): 0 KB
--> total (sum):               0 KB
 -> max memory:                69520 KB
 -> page faults from disk:     141
 -> other page faults:         18309
@@ -131,9 +122,6 @@ RESULTS  4.65s user 0.70s system 15% cpu 35.009 total
 -> user:                      4.65s
 -> system:                    0.70s
 -> cpu:                       15%
--> avg shared (code):         0 KB
--> avg unshared (data/stack): 0 KB
--> total (sum):               0 KB
 -> max memory:                68232 KB
 -> page faults from disk:     0
 -> other page faults:         18600
@@ -150,9 +138,6 @@ RESULTS  9.05s user 1.84s system 31% cpu 35.003 total
 -> user:                      9.05s
 -> system:                    1.84s
 -> cpu:                       31%
--> avg shared (code):         0 KB
--> avg unshared (data/stack): 0 KB
--> total (sum):               0 KB
 -> max memory:                10292 KB
 -> page faults from disk:     45
 -> other page faults:         3332
