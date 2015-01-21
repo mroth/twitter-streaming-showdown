@@ -13,7 +13,7 @@ versions of the EmojiData library for Ruby, NodeJS, and Elixir.
  rb-twitter       | ?    | x (1)     | x (2)    | √         | √
  js-twit          | ?    | x (3)     | √        | √         | √
  js-nodetwitter   | ?    | x         | x        | x         | √
- go-twitterstream | ?    | ?         | ?        | ?         | x
+ go-twitterstream | ?    | x         | x        | x         | x
  ex-twitter       | ?    | x         | ?        | √         | √
  java-hbc         | √    | √         | ?        | ?         | x
 
