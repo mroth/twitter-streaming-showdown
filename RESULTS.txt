@@ -1,0 +1,78 @@
+*** Running benchmark for Ruby - TweetStream gem (with Oj) ***
+Setting up a stream to track 7 terms 'a,i,luv'...
+Terms tracked: 10073 (↑10073, +1007/sec.), rate limited: 0 (+0)
+Terms tracked: 20712 (↑10639, +1063/sec.), rate limited: 0 (+0)
+Terms tracked: 31289 (↑10577, +1057/sec.), rate limited: 0 (+0)
+
+RESULTS  7.07s user 0.86s system 22% cpu 35.019 total
+-> user:                      7.07s
+-> system:                    0.86s
+-> cpu:                       22%
+-> max memory:                37036 KB
+-> page faults from disk:     68
+-> other page faults:         23508
+-> socket msgs received:      117922
+-> socket msgs sent:          7
+
+*** Running benchmark for Ruby - Twitter gem ***
+Setting up a stream to track 7 terms 'a,i,luv'...
+Terms tracked: 9997 (↑9997, +999/sec.), rate limited: 0 (+0)
+Terms tracked: 19940 (↑9942, +994/sec.), rate limited: 0 (+0)
+Terms tracked: 30277 (↑10337, +1033/sec.), rate limited: 0 (+0)
+
+RESULTS  6.26s user 1.14s system 21% cpu 35.024 total
+-> user:                      6.26s
+-> system:                    1.14s
+-> cpu:                       21%
+-> max memory:                46260 KB
+-> page faults from disk:     2
+-> other page faults:         25943
+-> socket msgs received:      358062
+-> socket msgs sent:          4
+
+*** Running benchmark for NodeJS - Twit module ***
+twitter stream connected
+Terms tracked: 9770 (↑9770, +977/sec.), rate limited: 0 (+0)
+Terms tracked: 19915 (↑10145, +1014.5/sec.), rate limited: 0 (+0)
+Terms tracked: 29547 (↑9632, +963.2/sec.), rate limited: 0 (+0)
+
+RESULTS  9.80s user 0.59s system 29% cpu 35.008 total
+-> user:                      9.80s
+-> system:                    0.59s
+-> cpu:                       29%
+-> max memory:                69520 KB
+-> page faults from disk:     141
+-> other page faults:         18309
+-> socket msgs received:      51258
+-> socket msgs sent:          10
+
+*** Running benchmark for NodeJS - NodeTwitter module ***
+Terms tracked: 9667 (↑9667, +966.7/sec.), rate limited: 0 (+0)
+Terms tracked: 20445 (↑10778, +1077.8/sec.), rate limited: 0 (+0)
+Terms tracked: 28923 (↑8478, +847.8/sec.), rate limited: 0 (+0)
+
+RESULTS  4.65s user 0.70s system 15% cpu 35.009 total
+-> user:                      4.65s
+-> system:                    0.70s
+-> cpu:                       15%
+-> max memory:                68232 KB
+-> page faults from disk:     0
+-> other page faults:         18600
+-> socket msgs received:      67540
+-> socket msgs sent:          10
+
+*** Running benchmark for Go - TwitterStream ***
+2015/01/21 16:08:26 Tracking terms: a,i,luv
+Terms tracked: 9589 (↑9589, +958/sec.)
+Terms tracked: 19693 (↑10104, +1010/sec.)
+Terms tracked: 29682 (↑9989, +998/sec.)
+
+RESULTS  9.05s user 1.84s system 31% cpu 35.003 total
+-> user:                      9.05s
+-> system:                    1.84s
+-> cpu:                       31%
+-> max memory:                10292 KB
+-> page faults from disk:     45
+-> other page faults:         3332
+-> socket msgs received:      64506
+-> socket msgs sent:          12
