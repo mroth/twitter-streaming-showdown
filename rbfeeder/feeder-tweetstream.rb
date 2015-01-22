@@ -15,7 +15,7 @@ end
 TERMS = ENV['TERMS'] || 'a,i'
 
 EM.run do
-  puts "Setting up a stream to track #{TERMS.size} terms '#{TERMS}'..."
+  puts "Setting up a stream to track terms '#{TERMS}'..."
   @tracked,@skipped,@tracked_last,@skipped_last = 0,0,0,0
 
   @client = TweetStream::Client.new
