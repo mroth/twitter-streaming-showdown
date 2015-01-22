@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/darkhelmet/twitterstream"
@@ -23,7 +24,8 @@ var (
 	accessToken    = os.Getenv("ACCESS_TOKEN")
 	accessSecret   = os.Getenv("ACCESS_TOKEN_SECRET")
 
-	terms = getEnvOrDefault("TERMS", "a,i")
+	terms    = getEnvOrDefault("TERMS", "a,i")
+	iters, _ = strconv.Atoi(getEnvOrDefault("ITERS", "0"))
 
 	wait    = 1
 	maxWait = 600
@@ -46,7 +48,10 @@ func min(a, b int) int {
 func downloader() {
 
 	client := twitterstream.NewClient(consumerKey, consumerSecret, accessToken, accessSecret)
-	log.Println("Tracking terms: " + terms)
+	fmt.Println("Setting up a stream to track terms: " + terms)
+	if iters > 0 {
+		fmt.Printf("Will auto-terminate after processing %d tweets.\n", iters)
+	}
 	for {
 		conn, err := client.Track(terms)
 		if err != nil {
@@ -66,6 +71,10 @@ func decodeTweets(conn *twitterstream.Connection) {
 	for {
 		if _, err := conn.Next(); err == nil {
 			tracked++
+
+			if iters > 0 && tracked > iters {
+				os.Exit(0)
+			}
 		} else {
 			log.Printf("decoding tweet failed: %s", err)
 			conn.Close()
@@ -81,7 +90,7 @@ func logger() {
 		period := tracked - trackedLast
 		periodRate := period / logRate
 
-		fmt.Printf("Terms tracked: %v (\u2191%v, +%v/sec.)\n", tracked, period, periodRate)
+		log.Printf("Terms tracked: %v (\u2191%v, +%v/sec.)\n", tracked, period, periodRate)
 
 		trackedLast = tracked
 	}

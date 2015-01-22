@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh -i
 
 # defaults, can be overriden via .env
-RUN_DURATION=35s
-TERMS='a,i,luv'
+# RUN_DURATION=35s
+ITERS=50000 #number of tweets to quit after receiving (0 = run forever)
+TERMS='the,be,to,of,and,a,in,that,have,I'
 
 TIMEFMT=$'\n'\
 'RESULTS  %U user %S system %P cpu %*E total'$'\n'\
@@ -33,12 +34,13 @@ setup () {
   export ACCESS_TOKEN ACCESS_TOKEN_SECRET
 
   # export preferences to subcmds
-  export TERMS
+  export TERMS ITERS
 }
 
 bench () {
   echo "*** Running benchmark for $3 ***"
-  (cd $1 && eval "time gtimeout $RUN_DURATION $2")
+  # (cd $1 && eval "time gtimeout $RUN_DURATION $2")
+  (cd $1 && eval "time $2")
 }
 
 # bench top

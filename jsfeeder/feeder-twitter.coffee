@@ -11,12 +11,17 @@ twit = new Twitter(
 
 
 TERMS = process.env.TERMS || 'a,i'
+ITERS = if process.env.ITERS then parseInt(process.env.ITERS) else 0
+
+console.log "Setting up a stream to track terms '#{TERMS}'..."
+console.log "Will auto-terminate after processing #{ITERS} tweets." if ITERS>0
 
 [tracked,skipped,tracked_last,skipped_last] = [0,0,0,0]
 
 twit.stream 'statuses/filter', {track: TERMS, stall_warnings: 'true'}, (stream) ->
   stream.on 'data', (data) ->
     tracked += 1
+    process.exit() if (tracked > ITERS && ITERS > 0)
 
   stream.on 'connect', (msg) ->
     console.log "twitter stream connected"

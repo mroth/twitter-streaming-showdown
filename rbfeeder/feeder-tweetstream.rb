@@ -13,9 +13,11 @@ TweetStream.configure do |config|
 end
 
 TERMS = ENV['TERMS'] || 'a,i'
+ITERS = ENV['ITERS'] ? ENV['ITERS'].to_i : 0
 
 EM.run do
   puts "Setting up a stream to track terms '#{TERMS}'..."
+  puts "Will auto-terminate after processing #{ITERS} tweets." if ITERS>0
   @tracked,@skipped,@tracked_last,@skipped_last = 0,0,0,0
 
   @client = TweetStream::Client.new
@@ -40,6 +42,7 @@ EM.run do
   # track those tweets!
   @client.track(TERMS) do |status|
     @tracked += 1
+    exit if (@tracked > ITERS && ITERS > 0)
   end
 
   # output stats periodically

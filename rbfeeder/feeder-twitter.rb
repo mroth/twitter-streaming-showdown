@@ -9,8 +9,10 @@ client = Twitter::Streaming::Client.new do |config|
 end
 
 TERMS = ENV['TERMS'] || 'a,i'
+ITERS = ENV['ITERS'] ? ENV['ITERS'].to_i : 0
 
 puts "Setting up a stream to track terms '#{TERMS}'..."
+puts "Will auto-terminate after processing #{ITERS} tweets." if ITERS>0
 @tracked,@skipped,@tracked_last,@skipped_last = 0,0,0,0
 
 
@@ -36,6 +38,7 @@ client.filter(track: TERMS) do |msg|
   case msg
   when Twitter::Tweet
     @tracked += 1
+    exit if (@tracked > ITERS && ITERS > 0)
   when Twitter::Streaming::DeletedTweet
     puts "SAW A DELETED TWEET"
   when Twitter::Streaming::StallWarning
