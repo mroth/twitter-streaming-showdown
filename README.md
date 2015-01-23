@@ -77,7 +77,7 @@ Results from a quad-core 4.0GHz Core i7 machine with 32GB of RAM on a 100Mbps
 fiber internet connection.
 
  Library            | User   | Sys   | CPU | Memory | MsgReceived | BWApprox
- ------------------ | ------ | ----- | --- | -----: | ----------: | -------:
+ ------------------ | -----: | ----: | --: | -----: | ----------: | -------:
  rb-tweetstream     |  43.46 |  3.55 | 29% |  44144 |     465857  | ~0.94 GB
  rb-twitter (MRI)   |  40.26 |  6.67 | 28% |  56400 |    2730766  | ~0.94 GB
  rb-twitter (JRuby) |  60.91 |  4.87 | 39% | 349080 |     463234  | ~0.95 GB
