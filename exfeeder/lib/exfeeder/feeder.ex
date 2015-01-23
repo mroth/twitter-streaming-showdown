@@ -5,23 +5,17 @@ defmodule Exfeeder.Feeder do
   @doc """
   Starts the feeder.
   """
-  def start_link(opts \\ []) do
+  def start_link do
     GenServer.start_link(__MODULE__, :ok, name: __MODULE__)
   end
 
   ## GenServer callbacks
   def init(:ok) do
 
-    pid = spawn(fn ->
-      ExTwitter.configure(
-         consumer_key:        System.get_env("CONSUMER_KEY"),
-         consumer_secret:     System.get_env("CONSUMER_SECRET"),
-         access_token:        System.get_env("ACCESS_TOKEN"),
-         access_token_secret: System.get_env("ACCESS_TOKEN_SECRET")
-      )
+    terms = System.get_env("TERMS")
+    Logger.info "Setting up a stream to track terms: #{terms}"
 
-      terms = System.get_env("TERMS")
-      Logger.info "Setting up a stream to track terms: #{terms}"
+    pid = spawn(fn ->
 
       stream = ExTwitter.stream_filter(track: terms, receive_messages: true)
       for message <- stream do

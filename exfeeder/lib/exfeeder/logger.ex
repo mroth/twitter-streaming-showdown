@@ -13,7 +13,7 @@ defmodule Exfeeder.Logger do
 
   @log_rate 10 #log rate in seconds
 
-  def start_link(opts \\ []) do
+  def start_link do
     GenServer.start_link(__MODULE__, :ok, name: __MODULE__)
   end
 

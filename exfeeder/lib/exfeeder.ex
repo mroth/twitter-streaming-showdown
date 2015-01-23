@@ -19,6 +19,8 @@ defmodule Exfeeder do
     Supervisor.start_link(children, opts)
   end
 
+  # called for escript
+  # not really using anymore in lieu of `mix run --no-halt` but here as reminder
   def main(_args) do
     :timer.sleep(:infinity)
   end
