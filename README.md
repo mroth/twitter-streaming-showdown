@@ -1,8 +1,6 @@
 # Comparing performance of Twitter Streaming API consumption libraries.
 Streaming data from Twitter is a a big part of what emojitrack-feeder does, so I
-want to compare the overhead of various Twitter Streaming API clients,
-especially since I now have versions of the EmojiData library for Ruby, NodeJS,
-and Elixir.
+want to compare the overhead of various Twitter Streaming API clients.
 
 My hopes is I will learn something about good options for future potential
 platform migrations for emojitrack-feeder, but also shed some light on areas of
@@ -18,6 +16,12 @@ Compared:
  - TwitterStream (Go package)
  - ExTwitter (Elixir module)
  - Hosebird (Java module, official from Twitter)
+
+In general what all these libraries do is connect to the Twitter Streaming API
+via HTTPS/OAuth, stream a buffer of JSON messages, and deserialize those
+messages into tweet objects and status messages.  They have varying degrees of
+event handling for the myriad of conditions the Twitter Streaming API can throw
+at you.
 
 NOTE: This is still in progress! Please don't consider this "published" just
 yet.
@@ -117,8 +121,8 @@ Full output of the tests runs (with more stats) can be found in the
    crashing!).
 
  - As seen in my fork of twit, a little bit of performance tuning can go a long
-   way.  I'd love to see more work done on all these libraries as I suspect they
-   have a lot of headroom.
+   way, and delimited helps! I'd love to see more work done on all these
+   libraries as I suspect they have a lot of headroom.
 
  - The bandwidth savings from gzip encoding are significant, and could be make
    or break for high throughput streams (in this case, it reduced incoming
