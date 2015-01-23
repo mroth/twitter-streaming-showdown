@@ -17,7 +17,7 @@ Compared:
  - Twit (NodeJS module)
  - TwitterStream (Go package)
  - ExTwitter (Elixir module)
- - Hosebird (Java module)
+ - Hosebird (Java module, official from Twitter)
 
 NOTE: This is still in progress! Please don't consider this "published" just
 yet.
@@ -127,4 +127,4 @@ Full output of the tests runs (with more stats) can be found in the
  - It's not clear to me why the VM based languages (JRuby/JVM, Elixir/BEAM,
    Scala/JVM) appear to have higher CPU usage, when the common belief is that
    they should be faster. Is there something going on here that my metrics end
-   up measuring overhead improperly?
+   up measuring overhead improperly?  Help would be appreciated!
