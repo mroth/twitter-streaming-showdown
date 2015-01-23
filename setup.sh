@@ -3,6 +3,7 @@
 # setup ruby version
 # assume we have rbenv installed so .ruby-version will be respected
 (cd rbfeeder && bundle install)
+(cd rbfeeder-jruby && bundle install)
 
 # setup nodejs versions
 (cd jsfeeder && npm install)
