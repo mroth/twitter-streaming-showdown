@@ -20,8 +20,8 @@ defmodule Exfeeder.Feeder do
          access_token_secret: System.get_env("ACCESS_TOKEN_SECRET")
       )
 
-      terms  = System.get_env("TERMS")
-      Logger.info "Tracking terms: #{terms}"
+      terms = System.get_env("TERMS")
+      Logger.info "Setting up a stream to track terms: #{terms}"
 
       stream = ExTwitter.stream_filter(track: terms, receive_messages: true)
       for message <- stream do
@@ -30,10 +30,11 @@ defmodule Exfeeder.Feeder do
             GenServer.cast(Exfeeder.Logger, :increment)
 
           deleted_tweet = %ExTwitter.Model.DeletedTweet{} ->
-            Logger.info "deleted tweet = #{deleted_tweet.status["id"]}"
+            Logger.info "deleted tweet = #{deleted_tweet.status['id']}"
 
           limit = %ExTwitter.Model.Limit{} ->
             Logger.warn "limit = #{limit.track}"
+            # TODO: send me to the logger once we know how to decode
 
           stall_warning = %ExTwitter.Model.StallWarning{} ->
             Logger.warn "stall warning = #{stall_warning.code}"

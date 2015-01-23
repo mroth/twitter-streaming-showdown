@@ -31,7 +31,7 @@ defmodule Exfeeder.Mixfile do
   defp deps do
     [
       {:oauth,      github: "tim/erlang-oauth"},
-      {:extwitter,  "~> 0.2.1"}
+      {:extwitter,  "~> 0.3.0"}
     ]
   end
 end

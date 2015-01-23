@@ -18,7 +18,6 @@ defmodule Exfeeder do
     Supervisor.start_link(children, opts)
   end
 
-
   def main(_args) do
     :timer.sleep(:infinity)
   end
