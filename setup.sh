@@ -15,3 +15,6 @@ go get -u github.com/darkhelmet/twitterstream
 
 # set elixir version
 (cd exfeeder && mix do deps.get, deps.compile, compile)
+
+# setup scala version
+(cd scalafeeder && sbt compile)

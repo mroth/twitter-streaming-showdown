@@ -53,3 +53,4 @@ bench "jsfeeder-fork"  "coffee feeder-twit.coffee"              "NodeJS - Twit m
 bench "jsfeeder"       "coffee feeder-twitter.coffee"           "NodeJS - NodeTwitter module"
 bench "gofeeder"       "./gofeeder"                             "Go - TwitterStream"
 bench "exfeeder"       "mix run --no-halt"                      "Elixir - ExTwitter"
+bench "scalafeeder"    "sbt run"                                "Scala - Hosebird"
