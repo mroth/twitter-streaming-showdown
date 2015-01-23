@@ -94,17 +94,12 @@ Decoding the output:
  - CPU (CPU percentage)
  - Memory (max memory usage in KB)
  - MsgReceived (socket messages received): I initially believed this was a good
-   approximation for incoming bandwidth consumption. It is not at all. Need a
-   better way to compare to show the affects of gzip support.
+   approximation for incoming bandwidth consumption. It is not at all.
  - BWApprox (approximate bandwidth): I haven't figured out how to have the shell
-   track this in a controlled way yet, so these numbers are very approximate
-   based on me manually watching the process run in `nettop` for now.
+   track this in a controlled way yet, so these numbers are approximate based on
+   me manually watching the process run in `nettop` for now. Still, they pretty
+   clearly show the affects of GZip support.
 
-### Notes
- - I can't seem to get bytes-received via `time`, and socket msgs received isn't
-   actually helpful, so might need another way to profile bandwidth usage. From
-   manually looking at nettop, clients without gzip support read about ~150MB
-   during these tests, and those with it about ~45MB.
 
 ### Full benchmark output
 Full output of the tests runs (with more stats) can be found in the
