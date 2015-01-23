@@ -1,0 +1,16 @@
+{
+  "name": "feederjs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "feeder.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "emoji-data": "^0.2.0",
+    "twit": "git://github.com/mroth/twit#perf"
+  }
+}

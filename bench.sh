@@ -48,6 +48,7 @@ setup
 bench "rbfeeder" "bundle exec ruby feeder-tweetstream.rb" "Ruby - TweetStream gem (with Oj)"
 bench "rbfeeder" "bundle exec ruby feeder-twitter.rb"     "Ruby - Twitter gem"
 bench "jsfeeder" "coffee feeder-twit.coffee"              "NodeJS - Twit module"
+bench "jsfeeder-fork" "coffee feeder-twit.coffee"         "NodeJS - Twit module (mroth/twit#perf fork)"
 bench "jsfeeder" "coffee feeder-twitter.coffee"           "NodeJS - NodeTwitter module"
 bench "gofeeder" "./gofeeder"                             "Go - TwitterStream"
 bench "exfeeder" "mix run --no-halt"                      "Elixir - ExTwitter"
