@@ -33,10 +33,10 @@ into things and remove this message!
  ---------------- | ---- | --------- | -------- | --------- | ---------
  rb-tweetstream   | x    | x         | √        | √         | √
  rb-twitter       | x    | x (1)     | x (2)    | √         | √
- js-twit          | ?    | x (3)     | √        | √         | √
- js-nodetwitter   | ?    | x         | x        | x         | √
- go-twitterstream | ?    | x         | x        | x         | x
- ex-twitter       | ?    | x         | √        | √         | √
+ js-twit          | x    | x (3)     | √        | √         | √
+ js-nodetwitter   | x    | x         | x        | x         | √
+ go-twitterstream | √    | x         | x        | x         | x
+ ex-twitter       | x    | x         | √        | √         | √
  java-hbc         | √    | √         | √        | √         | x
 
 
