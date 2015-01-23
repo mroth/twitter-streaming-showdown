@@ -9,7 +9,8 @@ defmodule Exfeeder do
     children = [
       # Define workers and child supervisors to be supervised
       worker(Exfeeder.Feeder, []),
-      worker(Exfeeder.Logger, [])
+      worker(Exfeeder.Logger, []),
+      worker(Exfeeder.BenchMonitor, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

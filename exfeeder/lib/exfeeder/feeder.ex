@@ -28,6 +28,7 @@ defmodule Exfeeder.Feeder do
         case message do
           _tweet = %ExTwitter.Model.Tweet{} ->
             GenServer.cast(Exfeeder.Logger, :increment)
+            GenServer.cast(Exfeeder.BenchMonitor, :tick)
 
           deleted_tweet = %ExTwitter.Model.DeletedTweet{} ->
             Logger.info "deleted tweet = #{deleted_tweet.status['id']}"
