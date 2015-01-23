@@ -15,7 +15,7 @@ console.log "Setting up a stream to track terms '#{TERMS}'..."
 console.log "Will auto-terminate after processing #{ITERS} tweets." if ITERS>0
 
 [tracked,skipped,tracked_last,skipped_last] = [0,0,0,0]
-stream = T.stream('statuses/filter', { track: TERMS, stall_warnings: 'true' })
+stream = T.stream('statuses/filter', { track: TERMS, stall_warnings: 'true', delimited: 'length' })
 
 stream.on 'tweet', (tweet) ->
   tracked += 1

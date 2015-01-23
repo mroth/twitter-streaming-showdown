@@ -122,31 +122,30 @@ RESULTS  72.63s user 3.96s system 47% cpu 2:42.21 total
 Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
 Will auto-terminate after processing 250000 tweets.
 twitter stream connected
-Terms tracked: 15425 (↑15425, +1542.5/sec.), rate limited: 0 (+0)
-Terms tracked: 31024 (↑15599, +1559.9/sec.), rate limited: 0 (+0)
-Terms tracked: 46247 (↑15223, +1522.3/sec.), rate limited: 0 (+0)
-Terms tracked: 62085 (↑15838, +1583.8/sec.), rate limited: 0 (+0)
-Terms tracked: 77663 (↑15578, +1557.8/sec.), rate limited: 0 (+0)
-Terms tracked: 93362 (↑15699, +1569.9/sec.), rate limited: 0 (+0)
-Terms tracked: 108989 (↑15627, +1562.7/sec.), rate limited: 0 (+0)
-Terms tracked: 124474 (↑15485, +1548.5/sec.), rate limited: 0 (+0)
-Terms tracked: 140101 (↑15627, +1562.7/sec.), rate limited: 0 (+0)
-Terms tracked: 155682 (↑15581, +1558.1/sec.), rate limited: 0 (+0)
-Terms tracked: 171126 (↑15444, +1544.4/sec.), rate limited: 0 (+0)
-Terms tracked: 187221 (↑16095, +1609.5/sec.), rate limited: 0 (+0)
-Terms tracked: 203129 (↑15908, +1590.8/sec.), rate limited: 0 (+0)
-Terms tracked: 218537 (↑15408, +1540.8/sec.), rate limited: 0 (+0)
-Terms tracked: 233954 (↑15417, +1541.7/sec.), rate limited: 0 (+0)
-Terms tracked: 249409 (↑15455, +1545.5/sec.), rate limited: 0 (+0)
+Terms tracked: 15908 (↑15908, +1590.8/sec.), rate limited: 0 (+0)
+Terms tracked: 32277 (↑16369, +1636.9/sec.), rate limited: 0 (+0)
+Terms tracked: 48599 (↑16322, +1632.2/sec.), rate limited: 0 (+0)
+Terms tracked: 64238 (↑15639, +1563.9/sec.), rate limited: 0 (+0)
+Terms tracked: 80110 (↑15872, +1587.2/sec.), rate limited: 0 (+0)
+Terms tracked: 95933 (↑15823, +1582.3/sec.), rate limited: 0 (+0)
+Terms tracked: 111173 (↑15240, +1524/sec.), rate limited: 0 (+0)
+Terms tracked: 126551 (↑15378, +1537.8/sec.), rate limited: 0 (+0)
+Terms tracked: 142928 (↑16377, +1637.7/sec.), rate limited: 0 (+0)
+Terms tracked: 158444 (↑15516, +1551.6/sec.), rate limited: 0 (+0)
+Terms tracked: 174081 (↑15637, +1563.7/sec.), rate limited: 0 (+0)
+Terms tracked: 189710 (↑15629, +1562.9/sec.), rate limited: 0 (+0)
+Terms tracked: 205800 (↑16090, +1609/sec.), rate limited: 0 (+0)
+Terms tracked: 221566 (↑15766, +1576.6/sec.), rate limited: 0 (+0)
+Terms tracked: 238054 (↑16488, +1648.8/sec.), rate limited: 0 (+0)
 
-RESULTS  36.33s user 4.82s system 25% cpu 2:40.52 total
--> user:                      36.33s
--> system:                    4.82s
--> cpu:                       25%
--> max memory:                103712 KB
+RESULTS  32.77s user 4.61s system 23% cpu 2:37.51 total
+-> user:                      32.77s
+-> system:                    4.61s
+-> cpu:                       23%
+-> max memory:                93972 KB
 -> page faults from disk:     0
--> other page faults:         28518
--> socket msgs received:      536869
+-> other page faults:         25413
+-> socket msgs received:      515569
 -> socket msgs sent:          10
 
 *** Running benchmark for NodeJS - NodeTwitter module ***

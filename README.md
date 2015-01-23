@@ -57,7 +57,7 @@ contribute to performance.)
 Notes:
  1. Inquired about via issue in sferik/twitter#631.
  2. Requested via issue in sferik/twitter#649.
- 3. PR adding this in ttezel/twit#150.
+ 3. PR adding this in ttezel/twit#150, which I also compare in my benchmarks.
 
 ## Benchmarks
 My test programs connect to the Twitter Streaming API and do a filter keyword
@@ -82,7 +82,7 @@ fiber internet connection.
  rb-twitter (MRI)   |  40.26 |  6.67 | 28% |  56400 |    2730766  | ~0.94 GB
  rb-twitter (JRuby) |  60.91 |  4.87 | 39% | 349080 |     463234  | ~0.95 GB
  js-twit            |  72.63 |  3.96 | 47% |  93688 |     410594  | ~0.94 GB
- js-twit _(fork*)_  |  36.33 |  4.82 | 25% | 103712 |     536869  | ~0.94 GB
+ js-mroth/twit#perf |  32.77 |  4.61 | 23% |  93972 |     515569  | ~0.95 GB
  js-nodetwitter     |  32.08 |  4.64 | 22% |  93224 |     534422  | ~0.95 GB
  go-twitterstream   |  57.86 |  8.64 | 40% |  10468 |     439641  | ~0.35 GB
  ex-twitter         | 119.23 | 16.42 | 83% |  49840 |     832032  | ~0.96 GB
