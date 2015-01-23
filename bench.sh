@@ -2,7 +2,7 @@
 
 # defaults, can be overriden via .env
 # RUN_DURATION=35s
-ITERS=50000 #number of tweets to quit after receiving (0 = run forever)
+ITERS=250000 #number of tweets to quit after receiving (0 = run forever)
 TERMS='the,be,to,of,and,a,in,that,have,I'
 
 TIMEFMT=$'\n'\
