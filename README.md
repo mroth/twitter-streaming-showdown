@@ -24,7 +24,8 @@ event handling for the myriad of conditions the Twitter Streaming API can throw
 at you.
 
 NOTE: This is still in progress! Please don't consider this "published" just
-yet.
+yet.  If you're going to write these results please wait until I finish looking
+into things and remove this message!
 
 ## Feature Comparison
 
@@ -121,8 +122,8 @@ Full output of the tests runs (with more stats) can be found in the
    crashing!).
 
  - As seen in my fork of twit, a little bit of performance tuning can go a long
-   way, and delimited helps! I'd love to see more work done on all these
-   libraries as I suspect they have a lot of headroom.
+   way, and `delimited: length` helps! I'd love to see more work done on all
+   these libraries as I suspect they have a lot of headroom.
 
  - The bandwidth savings from gzip encoding are significant, and could be make
    or break for high throughput streams (in this case, it reduced incoming
