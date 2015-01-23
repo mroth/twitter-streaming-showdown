@@ -1,78 +1,279 @@
 *** Running benchmark for Ruby - TweetStream gem (with Oj) ***
-Setting up a stream to track 7 terms 'a,i,luv'...
-Terms tracked: 10073 (↑10073, +1007/sec.), rate limited: 0 (+0)
-Terms tracked: 20712 (↑10639, +1063/sec.), rate limited: 0 (+0)
-Terms tracked: 31289 (↑10577, +1057/sec.), rate limited: 0 (+0)
+Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
+Will auto-terminate after processing 250000 tweets.
+Terms tracked: 15032 (↑15032, +1503/sec.), rate limited: 0 (+0)
+Terms tracked: 30692 (↑15660, +1566/sec.), rate limited: 0 (+0)
+Terms tracked: 46251 (↑15559, +1555/sec.), rate limited: 0 (+0)
+Terms tracked: 61702 (↑15451, +1545/sec.), rate limited: 0 (+0)
+Terms tracked: 77271 (↑15569, +1556/sec.), rate limited: 0 (+0)
+Terms tracked: 92217 (↑14946, +1494/sec.), rate limited: 0 (+0)
+Terms tracked: 108002 (↑15785, +1578/sec.), rate limited: 0 (+0)
+Terms tracked: 125414 (↑17412, +1741/sec.), rate limited: 0 (+0)
+Terms tracked: 141841 (↑16427, +1642/sec.), rate limited: 0 (+0)
+Terms tracked: 157999 (↑16158, +1615/sec.), rate limited: 0 (+0)
+Terms tracked: 173497 (↑15498, +1549/sec.), rate limited: 0 (+0)
+Terms tracked: 188862 (↑15365, +1536/sec.), rate limited: 0 (+0)
+Terms tracked: 204753 (↑15891, +1589/sec.), rate limited: 0 (+0)
+Terms tracked: 221783 (↑17030, +1703/sec.), rate limited: 0 (+0)
+Terms tracked: 237063 (↑15280, +1528/sec.), rate limited: 0 (+0)
 
-RESULTS  7.07s user 0.86s system 22% cpu 35.019 total
--> user:                      7.07s
--> system:                    0.86s
--> cpu:                       22%
--> max memory:                37036 KB
--> page faults from disk:     68
--> other page faults:         23508
--> socket msgs received:      117922
+RESULTS  43.46s user 3.55s system 29% cpu 2:38.97 total
+-> user:                      43.46s
+-> system:                    3.55s
+-> cpu:                       29%
+-> max memory:                44144 KB
+-> page faults from disk:     0
+-> other page faults:         25108
+-> socket msgs received:      465857
 -> socket msgs sent:          7
 
 *** Running benchmark for Ruby - Twitter gem ***
-Setting up a stream to track 7 terms 'a,i,luv'...
-Terms tracked: 9997 (↑9997, +999/sec.), rate limited: 0 (+0)
-Terms tracked: 19940 (↑9942, +994/sec.), rate limited: 0 (+0)
-Terms tracked: 30277 (↑10337, +1033/sec.), rate limited: 0 (+0)
+Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
+Will auto-terminate after processing 250000 tweets.
+Terms tracked: 14522 (↑14522, +1452/sec.), rate limited: 0 (+0)
+Terms tracked: 29849 (↑15327, +1532/sec.), rate limited: 0 (+0)
+Terms tracked: 45366 (↑15517, +1551/sec.), rate limited: 0 (+0)
+Terms tracked: 61104 (↑15738, +1573/sec.), rate limited: 0 (+0)
+Terms tracked: 76600 (↑15496, +1549/sec.), rate limited: 0 (+0)
+Terms tracked: 92332 (↑15732, +1573/sec.), rate limited: 0 (+0)
+Terms tracked: 107833 (↑15501, +1550/sec.), rate limited: 0 (+0)
+Terms tracked: 122720 (↑14887, +1488/sec.), rate limited: 0 (+0)
+Terms tracked: 137806 (↑15086, +1508/sec.), rate limited: 0 (+0)
+Terms tracked: 153554 (↑15748, +1574/sec.), rate limited: 0 (+0)
+Terms tracked: 169175 (↑15619, +1561/sec.), rate limited: 0 (+0)
+Terms tracked: 184368 (↑15193, +1519/sec.), rate limited: 0 (+0)
+Terms tracked: 199887 (↑15519, +1551/sec.), rate limited: 0 (+0)
+Terms tracked: 215321 (↑15434, +1543/sec.), rate limited: 0 (+0)
+Terms tracked: 231073 (↑15752, +1575/sec.), rate limited: 0 (+0)
+Terms tracked: 246779 (↑15704, +1570/sec.), rate limited: 0 (+0)
 
-RESULTS  6.26s user 1.14s system 21% cpu 35.024 total
--> user:                      6.26s
--> system:                    1.14s
--> cpu:                       21%
--> max memory:                46260 KB
--> page faults from disk:     2
--> other page faults:         25943
--> socket msgs received:      358062
+RESULTS  40.26s user 6.67s system 28% cpu 2:42.45 total
+-> user:                      40.26s
+-> system:                    6.67s
+-> cpu:                       28%
+-> max memory:                56400 KB
+-> page faults from disk:     0
+-> other page faults:         28168
+-> socket msgs received:      2730766
 -> socket msgs sent:          4
 
-*** Running benchmark for NodeJS - Twit module ***
-twitter stream connected
-Terms tracked: 9770 (↑9770, +977/sec.), rate limited: 0 (+0)
-Terms tracked: 19915 (↑10145, +1014.5/sec.), rate limited: 0 (+0)
-Terms tracked: 29547 (↑9632, +963.2/sec.), rate limited: 0 (+0)
+*** Running benchmark for JRuby - Twitter gem ***
+Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
+Will auto-terminate after processing 250000 tweets.
+Terms tracked: 14413 (↑14413, +1441/sec.), rate limited: 0 (+0)
+Terms tracked: 29478 (↑15064, +1506/sec.), rate limited: 0 (+0)
+Terms tracked: 44278 (↑14800, +1480/sec.), rate limited: 0 (+0)
+Terms tracked: 59392 (↑15114, +1511/sec.), rate limited: 0 (+0)
+Terms tracked: 76182 (↑16790, +1679/sec.), rate limited: 0 (+0)
+Terms tracked: 93130 (↑16948, +1694/sec.), rate limited: 0 (+0)
+Terms tracked: 108782 (↑15651, +1565/sec.), rate limited: 0 (+0)
+Terms tracked: 124557 (↑15774, +1577/sec.), rate limited: 0 (+0)
+Terms tracked: 140456 (↑15899, +1589/sec.), rate limited: 0 (+0)
+Terms tracked: 155930 (↑15474, +1547/sec.), rate limited: 0 (+0)
+Terms tracked: 171797 (↑15867, +1586/sec.), rate limited: 0 (+0)
+Terms tracked: 187043 (↑15246, +1524/sec.), rate limited: 0 (+0)
+Terms tracked: 202678 (↑15635, +1563/sec.), rate limited: 0 (+0)
+Terms tracked: 218135 (↑15457, +1545/sec.), rate limited: 0 (+0)
+Terms tracked: 233574 (↑15439, +1543/sec.), rate limited: 0 (+0)
+Terms tracked: 248975 (↑15400, +1540/sec.), rate limited: 0 (+0)
 
-RESULTS  9.80s user 0.59s system 29% cpu 35.008 total
--> user:                      9.80s
--> system:                    0.59s
--> cpu:                       29%
--> max memory:                69520 KB
--> page faults from disk:     141
--> other page faults:         18309
--> socket msgs received:      51258
+RESULTS  60.91s user 4.87s system 39% cpu 2:44.47 total
+-> user:                      60.91s
+-> system:                    4.87s
+-> cpu:                       39%
+-> max memory:                349080 KB
+-> page faults from disk:     2
+-> other page faults:         216180
+-> socket msgs received:      463234
+-> socket msgs sent:          6
+
+*** Running benchmark for NodeJS - Twit module ***
+Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
+Will auto-terminate after processing 250000 tweets.
+twitter stream connected
+Terms tracked: 15137 (↑15137, +1513.7/sec.), rate limited: 0 (+0)
+Terms tracked: 30328 (↑15191, +1519.1/sec.), rate limited: 0 (+0)
+Terms tracked: 45428 (↑15100, +1510/sec.), rate limited: 0 (+0)
+Terms tracked: 60745 (↑15317, +1531.7/sec.), rate limited: 0 (+0)
+Terms tracked: 75917 (↑15172, +1517.2/sec.), rate limited: 0 (+0)
+Terms tracked: 91252 (↑15335, +1533.5/sec.), rate limited: 0 (+0)
+Terms tracked: 107345 (↑16093, +1609.3/sec.), rate limited: 0 (+0)
+Terms tracked: 122883 (↑15538, +1553.8/sec.), rate limited: 0 (+0)
+Terms tracked: 138442 (↑15559, +1555.9/sec.), rate limited: 0 (+0)
+Terms tracked: 153712 (↑15270, +1527/sec.), rate limited: 0 (+0)
+Terms tracked: 169143 (↑15431, +1543.1/sec.), rate limited: 0 (+0)
+Terms tracked: 184329 (↑15186, +1518.6/sec.), rate limited: 0 (+0)
+Terms tracked: 200496 (↑16167, +1616.7/sec.), rate limited: 0 (+0)
+Terms tracked: 215721 (↑15225, +1522.5/sec.), rate limited: 0 (+0)
+Terms tracked: 230802 (↑15081, +1508.1/sec.), rate limited: 0 (+0)
+Terms tracked: 246769 (↑15967, +1596.7/sec.), rate limited: 0 (+0)
+
+RESULTS  72.63s user 3.96s system 47% cpu 2:42.21 total
+-> user:                      72.63s
+-> system:                    3.96s
+-> cpu:                       47%
+-> max memory:                93688 KB
+-> page faults from disk:     0
+-> other page faults:         25650
+-> socket msgs received:      410594
+-> socket msgs sent:          10
+
+*** Running benchmark for NodeJS - Twit module (mroth/twit#perf fork) ***
+Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
+Will auto-terminate after processing 250000 tweets.
+twitter stream connected
+Terms tracked: 15425 (↑15425, +1542.5/sec.), rate limited: 0 (+0)
+Terms tracked: 31024 (↑15599, +1559.9/sec.), rate limited: 0 (+0)
+Terms tracked: 46247 (↑15223, +1522.3/sec.), rate limited: 0 (+0)
+Terms tracked: 62085 (↑15838, +1583.8/sec.), rate limited: 0 (+0)
+Terms tracked: 77663 (↑15578, +1557.8/sec.), rate limited: 0 (+0)
+Terms tracked: 93362 (↑15699, +1569.9/sec.), rate limited: 0 (+0)
+Terms tracked: 108989 (↑15627, +1562.7/sec.), rate limited: 0 (+0)
+Terms tracked: 124474 (↑15485, +1548.5/sec.), rate limited: 0 (+0)
+Terms tracked: 140101 (↑15627, +1562.7/sec.), rate limited: 0 (+0)
+Terms tracked: 155682 (↑15581, +1558.1/sec.), rate limited: 0 (+0)
+Terms tracked: 171126 (↑15444, +1544.4/sec.), rate limited: 0 (+0)
+Terms tracked: 187221 (↑16095, +1609.5/sec.), rate limited: 0 (+0)
+Terms tracked: 203129 (↑15908, +1590.8/sec.), rate limited: 0 (+0)
+Terms tracked: 218537 (↑15408, +1540.8/sec.), rate limited: 0 (+0)
+Terms tracked: 233954 (↑15417, +1541.7/sec.), rate limited: 0 (+0)
+Terms tracked: 249409 (↑15455, +1545.5/sec.), rate limited: 0 (+0)
+
+RESULTS  36.33s user 4.82s system 25% cpu 2:40.52 total
+-> user:                      36.33s
+-> system:                    4.82s
+-> cpu:                       25%
+-> max memory:                103712 KB
+-> page faults from disk:     0
+-> other page faults:         28518
+-> socket msgs received:      536869
 -> socket msgs sent:          10
 
 *** Running benchmark for NodeJS - NodeTwitter module ***
-Terms tracked: 9667 (↑9667, +966.7/sec.), rate limited: 0 (+0)
-Terms tracked: 20445 (↑10778, +1077.8/sec.), rate limited: 0 (+0)
-Terms tracked: 28923 (↑8478, +847.8/sec.), rate limited: 0 (+0)
+Setting up a stream to track terms 'the,be,to,of,and,a,in,that,have,I'...
+Will auto-terminate after processing 250000 tweets.
+Terms tracked: 14756 (↑14756, +1475.6/sec.), rate limited: 0 (+0)
+Terms tracked: 30603 (↑15847, +1584.7/sec.), rate limited: 0 (+0)
+Terms tracked: 46436 (↑15833, +1583.3/sec.), rate limited: 0 (+0)
+Terms tracked: 61390 (↑14954, +1495.4/sec.), rate limited: 0 (+0)
+Terms tracked: 77325 (↑15935, +1593.5/sec.), rate limited: 0 (+0)
+Terms tracked: 92719 (↑15394, +1539.4/sec.), rate limited: 0 (+0)
+Terms tracked: 107563 (↑14844, +1484.4/sec.), rate limited: 0 (+0)
+Terms tracked: 122412 (↑14849, +1484.9/sec.), rate limited: 0 (+0)
+Terms tracked: 137086 (↑14674, +1467.4/sec.), rate limited: 0 (+0)
+Terms tracked: 152123 (↑15037, +1503.7/sec.), rate limited: 0 (+0)
+Terms tracked: 168025 (↑15902, +1590.2/sec.), rate limited: 0 (+0)
+Terms tracked: 183378 (↑15353, +1535.3/sec.), rate limited: 0 (+0)
+Terms tracked: 198651 (↑15273, +1527.3/sec.), rate limited: 0 (+0)
+Terms tracked: 214545 (↑15894, +1589.4/sec.), rate limited: 0 (+0)
+Terms tracked: 229756 (↑15211, +1521.1/sec.), rate limited: 0 (+0)
+Terms tracked: 245205 (↑15449, +1544.9/sec.), rate limited: 0 (+0)
 
-RESULTS  4.65s user 0.70s system 15% cpu 35.009 total
--> user:                      4.65s
--> system:                    0.70s
--> cpu:                       15%
--> max memory:                68232 KB
+RESULTS  32.08s user 4.64s system 22% cpu 2:43.27 total
+-> user:                      32.08s
+-> system:                    4.64s
+-> cpu:                       22%
+-> max memory:                93224 KB
 -> page faults from disk:     0
--> other page faults:         18600
--> socket msgs received:      67540
+-> other page faults:         24924
+-> socket msgs received:      534422
 -> socket msgs sent:          10
 
 *** Running benchmark for Go - TwitterStream ***
-2015/01/21 16:08:26 Tracking terms: a,i,luv
-Terms tracked: 9589 (↑9589, +958/sec.)
-Terms tracked: 19693 (↑10104, +1010/sec.)
-Terms tracked: 29682 (↑9989, +998/sec.)
+Setting up a stream to track terms: the,be,to,of,and,a,in,that,have,I
+Will auto-terminate after processing 250000 tweets.
+2015/01/23 15:35:12 Terms tracked: 15384 (↑15384, +1538/sec.)
+2015/01/23 15:35:22 Terms tracked: 31340 (↑15956, +1595/sec.)
+2015/01/23 15:35:32 Terms tracked: 46649 (↑15309, +1530/sec.)
+2015/01/23 15:35:42 Terms tracked: 62178 (↑15529, +1552/sec.)
+2015/01/23 15:35:52 Terms tracked: 76991 (↑14813, +1481/sec.)
+2015/01/23 15:36:02 Terms tracked: 91950 (↑14959, +1495/sec.)
+2015/01/23 15:36:12 Terms tracked: 107945 (↑15995, +1599/sec.)
+2015/01/23 15:36:22 Terms tracked: 123309 (↑15364, +1536/sec.)
+2015/01/23 15:36:32 Terms tracked: 138603 (↑15294, +1529/sec.)
+2015/01/23 15:36:42 Terms tracked: 153425 (↑14822, +1482/sec.)
+2015/01/23 15:36:52 Terms tracked: 168373 (↑14948, +1494/sec.)
+2015/01/23 15:37:02 Terms tracked: 183267 (↑14894, +1489/sec.)
+2015/01/23 15:37:12 Terms tracked: 198776 (↑15509, +1550/sec.)
+2015/01/23 15:37:22 Terms tracked: 214569 (↑15793, +1579/sec.)
+2015/01/23 15:37:32 Terms tracked: 229550 (↑14981, +1498/sec.)
+2015/01/23 15:37:42 Terms tracked: 244705 (↑15155, +1515/sec.)
 
-RESULTS  9.05s user 1.84s system 31% cpu 35.003 total
--> user:                      9.05s
--> system:                    1.84s
--> cpu:                       31%
--> max memory:                10292 KB
--> page faults from disk:     45
--> other page faults:         3332
--> socket msgs received:      64506
+RESULTS  57.86s user 8.64s system 40% cpu 2:43.51 total
+-> user:                      57.86s
+-> system:                    8.64s
+-> cpu:                       40%
+-> max memory:                10468 KB
+-> page faults from disk:     0
+-> other page faults:         3147
+-> socket msgs received:      439641
 -> socket msgs sent:          12
+
+*** Running benchmark for Elixir - ExTwitter ***
+15:37:46.494 [info]  Setting up a stream to track terms: the,be,to,of,and,a,in,that,have,I
+15:37:46.497 [info]  Will auto-terminate after processing 250000 tweets.
+15:37:56.497 [info]  Terms tracked: 13996 (↑13996, +1399.6/sec.), rate limited: 0 (+0)
+15:38:06.497 [info]  Terms tracked: 29173 (↑15177, +1517.7/sec.), rate limited: 0 (+0)
+15:38:16.497 [info]  Terms tracked: 44860 (↑15687, +1568.7/sec.), rate limited: 0 (+0)
+15:38:26.497 [info]  Terms tracked: 60206 (↑15346, +1534.6/sec.), rate limited: 0 (+0)
+15:38:36.497 [info]  Terms tracked: 75528 (↑15322, +1532.2/sec.), rate limited: 0 (+0)
+15:38:46.497 [info]  Terms tracked: 91111 (↑15583, +1558.3/sec.), rate limited: 0 (+0)
+15:38:56.497 [info]  Terms tracked: 105571 (↑14460, +1446.0/sec.), rate limited: 0 (+0)
+15:39:06.497 [info]  Terms tracked: 120475 (↑14904, +1490.4/sec.), rate limited: 0 (+0)
+15:39:16.497 [info]  Terms tracked: 135665 (↑15190, +1519.0/sec.), rate limited: 0 (+0)
+15:39:26.497 [info]  Terms tracked: 150801 (↑15136, +1513.6/sec.), rate limited: 0 (+0)
+15:39:36.497 [info]  Terms tracked: 165532 (↑14731, +1473.1/sec.), rate limited: 0 (+0)
+15:39:46.497 [info]  Terms tracked: 180438 (↑14906, +1490.6/sec.), rate limited: 0 (+0)
+15:39:56.497 [info]  Terms tracked: 195262 (↑14824, +1482.4/sec.), rate limited: 0 (+0)
+15:40:06.497 [info]  Terms tracked: 211254 (↑15992, +1599.2/sec.), rate limited: 0 (+0)
+15:40:16.497 [info]  Terms tracked: 228560 (↑17306, +1730.6/sec.), rate limited: 0 (+0)
+15:40:26.497 [info]  Terms tracked: 245270 (↑16710, +1671.0/sec.), rate limited: 0 (+0)
+
+RESULTS  119.23s user 16.42s system 83% cpu 2:43.28 total
+-> user:                      119.23s
+-> system:                    16.42s
+-> cpu:                       83%
+-> max memory:                49840 KB
+-> page faults from disk:     0
+-> other page faults:         64798
+-> socket msgs received:      832032
+-> socket msgs sent:          5
+
+*** Running benchmark for Scala - Hosebird ***
+[info] Set current project to scalafeeder (in build file:/Users/mroth/Dropbox/src/scratchpad/feeder-showdown/scalafeeder/)
+[info] Running Feeder
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Setting up a stream to track List(the, be, to, of, and, a, in, that, have, I)...
+Will auto-terminate after processing 250000 tweets.
+Terms tracked: 14573 (↑14573, +1457/sec.), rate limited: 0 (+0)
+Terms tracked: 29824 (↑15251, +1525/sec.), rate limited: 0 (+0)
+Terms tracked: 44655 (↑14831, +1483/sec.), rate limited: 0 (+0)
+Terms tracked: 60493 (↑15838, +1583/sec.), rate limited: 0 (+0)
+Terms tracked: 75451 (↑14958, +1495/sec.), rate limited: 0 (+0)
+Terms tracked: 90241 (↑14790, +1479/sec.), rate limited: 0 (+0)
+Terms tracked: 105448 (↑15205, +1520/sec.), rate limited: 0 (+0)
+Terms tracked: 120592 (↑15143, +1514/sec.), rate limited: 0 (+0)
+Terms tracked: 135566 (↑14974, +1497/sec.), rate limited: 0 (+0)
+Terms tracked: 151142 (↑15576, +1557/sec.), rate limited: 0 (+0)
+Terms tracked: 166550 (↑15408, +1540/sec.), rate limited: 0 (+0)
+Terms tracked: 181695 (↑15145, +1514/sec.), rate limited: 0 (+0)
+Terms tracked: 196511 (↑14816, +1481/sec.), rate limited: 0 (+0)
+Terms tracked: 211844 (↑15333, +1533/sec.), rate limited: 0 (+0)
+Terms tracked: 227074 (↑15230, +1523/sec.), rate limited: 0 (+0)
+Terms tracked: 242826 (↑15752, +1575/sec.), rate limited: 0 (+0)
+Done, stopping!
+
+Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandler in thread "run-main-0"
+[success] Total time: 165 s, completed Jan 23, 2015 3:43:17 PM
+
+RESULTS  87.69s user 7.54s system 56% cpu 2:47.68 total
+-> user:                      87.69s
+-> system:                    7.54s
+-> cpu:                       56%
+-> max memory:                538876 KB
+-> page faults from disk:     420
+-> other page faults:         207813
+-> socket msgs received:      2654263
+-> socket msgs sent:          17
