@@ -55,9 +55,14 @@ versions of emojitrack-feeder. (The others are nice to have that could
 contribute to performance.)
 
 Notes:
- 1. Inquired about via issue in sferik/twitter#631.
- 2. Requested via issue in sferik/twitter#649.
- 3. PR adding this in ttezel/twit#150, which I also compare in my benchmarks.
+ 1. Inquired about via issue in [sferik/twitter#631][631].
+ 2. Requested via issue in [sferik/twitter#649][649].
+ 3. PR adding this in [ttezel/twit#150][150], which I also compare in my
+ benchmarks.
+
+[631]: https://github.com/sferik/twitter/pull/631
+[649]: https://github.com/sferik/twitter/issues/649
+[150]: https://github.com/ttezel/twit/pull/150
 
 ## Benchmarks
 My test programs connect to the Twitter Streaming API and do a filter keyword
@@ -116,9 +121,9 @@ Full output of the tests runs (with more stats) can be found in the
    re-running these benchmarks a few times before it made it through without
    crashing!).
 
- - As seen in my fork of twit, a little bit of performance tuning can go a long
-   way, and `delimited: length` helps! I'd love to see more work done on all
-   these libraries as I suspect they have a lot of headroom.
+ - As seen in [my fork of twit][150], even a little bit of performance tuning
+   can go a long way, and `delimited: length` helps! I'd love to see more work
+   done on all these libraries as I suspect they have a lot of headroom.
 
  - The bandwidth savings from gzip encoding are significant, and could be make
    or break for high throughput streams (in this case, it reduced incoming
