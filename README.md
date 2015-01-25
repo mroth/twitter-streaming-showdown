@@ -30,15 +30,15 @@ looking into things and remove this message!_
 
 ## Feature Comparison
 
- Library          | GZip | Delimited | RateWarn | StallWarn | EmojiData
- ---------------- | ---- | --------- | -------- | --------- | ---------
- rb-tweetstream   | x    | x         | √        | √         | √
- rb-twitter       | x    | x (1)     | x (2)    | √         | √
- js-twit          | x    | x (3)     | √        | √         | √
- js-nodetwitter   | x    | x         | x        | x         | √
- go-twitterstream | √    | x         | x        | x         | x
- ex-twitter       | x    | x         | √        | √         | √
- java-hbc         | √    | √         | √        | √         | x
+ Library          | GZip  | Delimited | RateWarn | StallWarn | EmojiData
+ ---------------- | ----- | --------- | -------- | --------- | ---------
+ rb-tweetstream   | x     | x         | √        | √         | √
+ rb-twitter       | x (1) | x (2)     | x (3)    | √         | √
+ js-twit          | x     | x (4)     | √        | √         | √
+ js-nodetwitter   | x     | x         | x        | x         | √
+ go-twitterstream | √     | x         | x        | x         | x
+ ex-twitter       | x     | x         | √        | √         | √
+ java-hbc         | √     | √         | √        | √         | x
 
 
 Definitions:
@@ -56,11 +56,13 @@ versions of emojitrack-feeder. (The others are nice to have that could
 contribute to performance.)
 
 Notes:
- 1. Inquired about via issue in [sferik/twitter#631][631].
- 2. Requested via issue in [sferik/twitter#649][649].
- 3. PR adding this in [ttezel/twit#150][150], which I also compare in my
+ 1. Now being tracked for `v6.0`, see [sferik/twitter#650][650]
+ 2. Inquired about in [sferik/twitter#631][631].
+ 3. Requested in [sferik/twitter#649][649], now being tracked for `v6.0`.
+ 4. PR adding this in [ttezel/twit#150][150], which I also compare in my
  benchmarks.
 
+[650]: https://github.com/sferik/twitter/issues/650
 [631]: https://github.com/sferik/twitter/pull/631
 [649]: https://github.com/sferik/twitter/issues/649
 [150]: https://github.com/ttezel/twit/pull/150
