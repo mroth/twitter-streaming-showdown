@@ -1,15 +1,16 @@
-# Comparing performance of Twitter Streaming API consumption libraries.
-Streaming data from Twitter is a a big part of what emojitrack-feeder does, so I
-want to compare the overhead of various Twitter Streaming API clients.
+# Comparing performance of Twitter Streaming API libraries
+Streaming data from Twitter at high volume is a a big part of what I do on a
+lot of my projects, most notably [emojitrack-feeder](http://github.com/mroth/emojitrack-feeder),
+so I wanted to compare the overhead of various Twitter Streaming API clients.
 
-My hopes is I will learn something about good options for future potential
-platform migrations for emojitrack-feeder, but also shed some light on areas of
-potential improvements in all the libraries, since I would love to see the
-overall ecosystem improve here.
+My hopes is I will not only learn something about good options for future
+potential platform migrations for emojitrack-feeder, but also shed some light on
+areas of potential improvements in all the libraries, since I would love to help
+the overall ecosystem improve as much as possible.
 
 Compared:
 
- - TweetStream (Ruby gem)
+ - TweetStream (Ruby gem) _[currently used by emojtrack-feeder in production]_
  - Twitter (Ruby gem)
  - node-twitter (NodeJS module)
  - Twit (NodeJS module)
@@ -23,9 +24,9 @@ messages into tweet objects and status messages.  They have varying degrees of
 event handling for the myriad of conditions the Twitter Streaming API can throw
 at you.
 
-NOTE: This is still in progress! Please don't consider this "published" just
-yet.  If you're going to write these results please wait until I finish looking
-into things and remove this message!
+_NOTE: This is still in progress! Please don't consider this "published" just
+yet.  If you're going to write up these results please wait until I finish
+looking into things and remove this message!_
 
 ## Feature Comparison
 
@@ -113,13 +114,12 @@ Full output of the tests runs (with more stats) can be found in the
 ## Conclusions/Thoughts (In Progress)
 
  - Robust tests and error handling is really important.  For example, if you
-   were just looking at the number sin benchmarks, node-twitter might look good.
-   Sure, it's fairly fast **but** it accomplishes this by doing almost nothing,
-   its error handling appears to be "hard crash with a stack trace" on even
-   routine events messages from the Streaming API, which obviously is not
-   acceptable for production usage (it was unreliable enough to require
-   re-running these benchmarks a few times before it made it through without
-   crashing!).
+   were just looking at the numbers in benchmarks, node-twitter might look good.
+   Sure, it's fairly fast **but** its error handling appears to be "hard crash
+   with a stack trace" on even routine events messages from the Streaming API,
+   which obviously is not acceptable for production usage (it was unreliable
+   enough to require re-running these benchmarks a few times before it made it
+   through without crashing!).
 
  - As seen in [my fork of twit][150], even a little bit of performance tuning
    can go a long way, and `delimited: length` helps! I'd love to see more work
@@ -133,3 +133,15 @@ Full output of the tests runs (with more stats) can be found in the
    Scala/JVM) appear to have higher CPU usage, when the common belief is that
    they should be faster. Is there something going on here that my metrics end
    up measuring overhead improperly?  Help would be appreciated!
+
+## Shameless self-promotion
+If you enjoy these sort of benchmarks / programs and find them useful, please
+consider [following me on GitHub][mroth-gh] or [Twitter][mroth-tw] to see when I
+post new projects. :v::man::v:
+
+And of course, the reason I care about these benchmarks personally is
+:dizzy:[Emojitracker][et], which you should totally check out too.
+
+[mroth-gh]: https://github.com/mroth
+[mroth-tw]: https://twitter.com/mroth
+[et]: http://emojitracker.com
