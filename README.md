@@ -24,9 +24,8 @@ messages into tweet objects and status messages.  They have varying degrees of
 event handling for the myriad of conditions the Twitter Streaming API can throw
 at you.
 
-_NOTE: This is still in progress! Please don't consider this "published" just
-yet.  If you're going to write up these results please wait until I finish
-looking into things and remove this message!_
+_NOTE: This is still in progress! I'm still working out some kinks, so please
+don't consider this "final" just yet._
 
 ## Feature Comparison
 
