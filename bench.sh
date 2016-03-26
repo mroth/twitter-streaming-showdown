@@ -54,3 +54,4 @@ bench "jsfeeder"       "coffee feeder-twitter.coffee"           "NodeJS - NodeTw
 bench "gofeeder"       "./gofeeder"                             "Go - TwitterStream"
 bench "exfeeder"       "mix run --no-halt"                      "Elixir - ExTwitter"
 bench "scalafeeder"    "sbt run"                                "Scala - Hosebird"
+bench "goanaconda"     "./goanaconda"                             "Go - Anaconda"
