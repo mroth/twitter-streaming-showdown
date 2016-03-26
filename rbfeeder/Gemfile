@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.3.0'
 
 gem 'tweetstream',  '~> 2.6.1'
-gem 'oj',           '~> 2.11.4'
-gem 'eventmachine', '~> 1.0.4'
+gem 'oj',           '~> 2.14.6'
+gem 'eventmachine', '~> 1.2.0.1'
