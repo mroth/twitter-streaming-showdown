@@ -18,3 +18,6 @@ go get -u github.com/darkhelmet/twitterstream
 
 # setup scala version
 (cd scalafeeder && sbt compile)
+
+# setup rust version
+(cd rsfeeder && cargo build --release)
