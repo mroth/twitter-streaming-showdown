@@ -1,4 +1,5 @@
 extern crate futures;
+extern crate openssl_probe;
 extern crate tokio_core;
 extern crate tokio_timer;
 extern crate twitter_stream;
@@ -20,6 +21,10 @@ static GLOBAL_TRACKED: AtomicUsize = ATOMIC_USIZE_INIT;
 static GLOBAL_SKIPPED: AtomicUsize = ATOMIC_USIZE_INIT;
 
 fn main() {
+    // find openssl certs whereever they live, useful for docker multistage build
+    openssl_probe::init_ssl_cert_env_vars();
+
+    // load secrets and options from environment
     let consumer_key = env::var("CONSUMER_KEY").expect("CONSUMER_KEY");
     let consumer_secret = env::var("CONSUMER_SECRET").expect("CONSUMER_SECRET");
     let access_token = env::var("ACCESS_TOKEN").expect("ACCESS_TOKEN");
