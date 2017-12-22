@@ -1,0 +1,12 @@
+[package]
+name = "rsfeeder"
+version = "0.1.0"
+authors = ["Matthew Rothenberg <mroth@mroth.info"]
+
+[dependencies]
+twitter-stream = "0.5"
+futures = "0.1"
+tokio-core = "0.1"
+tokio-timer = "0.1"
+openssl-probe = "0.1.1"
+

@@ -55,3 +55,4 @@ bench "gofeeder"       "./gofeeder"                             "Go - TwitterStr
 bench "exfeeder"       "mix run --no-halt"                      "Elixir - ExTwitter"
 bench "scalafeeder"    "sbt run"                                "Scala - Hosebird"
 bench "goanaconda"     "./goanaconda"                             "Go - Anaconda"
+bench "rsfeeder"       "./target/release/rsfeeder"              "Rust - twitter_stream"
